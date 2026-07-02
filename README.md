@@ -73,9 +73,11 @@ test result: ok. 2 passed; 0 failed
 
 `.github/workflows/ci.yml` runs on every push/PR:
 1. `cargo test` for the Soroban contract workspace
-2. `npm ci && npm run build && npm run test` for the frontend
+2. `npm install && npm run build && npm run test` for the frontend
 
 See the [Actions tab](../../actions) for live runs.
+
+![CI pipeline passing](docs/screenshots/ci-pipeline-passing.png)
 
 ## Tech stack
 
