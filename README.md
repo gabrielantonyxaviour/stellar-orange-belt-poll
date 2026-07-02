@@ -25,7 +25,7 @@ Two real smart contracts, wired together with a genuine **inter-contract call**:
 | `set_minter` (authorize poll to mint) | `40bc72fb05f198dcef1d12d0208d6541790b2b33f491d66bfe4491884dddc3d4` |
 | `set_reward_token` (wire poll → reward-token) | `49a7e7a5b30213fb4b32789e597417cf294ea67b2108d3b1b16dbc13371bdb06` |
 | `create_poll` (init poll 1) | `e4918f5a48857cb8be1221f153ee4bf46c364b96b4778fe35f6894914d44edac` |
-| CLI verification vote (proves the inter-contract mint) | [`102ac7089ad0956cd1956eab31e1f4821c509ccee626ed9f70be996f514c85f2`](https://stellar.expert/explorer/testnet/tx/102ac7089ad0956cd1956eab31e1f4821c509ccee626ed9f70be996f514c85f2) |
+| CLI verification vote (proves the inter-contract mint) | [`7f01920deb3a257324a17d01c69682193003f1051e80df4afa1080e82b3df323`](https://stellar.expert/explorer/testnet/tx/7f01920deb3a257324a17d01c69682193003f1051e80df4afa1080e82b3df323) |
 | **Real browser vote** (Freighter, via the live frontend) | [`430c637ea1474fdf0e4ac42a6c95817ddc527a613d7f7314714b58220a0e326b`](https://stellar.expert/explorer/testnet/tx/430c637ea1474fdf0e4ac42a6c95817ddc527a613d7f7314714b58220a0e326b) |
 
 Every vote above independently increased the voter's reward-token balance via the inter-contract `mint` call — confirmed by reading `balance` on the reward-token contract after each vote.
@@ -43,7 +43,7 @@ Every vote above independently increased the voter's reward-token balance via th
 
 ![Wallet connected, live results, reward balance](docs/screenshots/wallet-connected-results.png)
 
-**Demo video:** [`docs/demo/walkthrough.mp4`](docs/demo/walkthrough.mp4) (also as a [gif](docs/demo/walkthrough.gif)) — connect wallet → live on-chain results → reward balance → disconnect. Recorded against the deployed testnet contracts, not a mock.
+**Demo video (~72s):** [`docs/demo/walkthrough.mp4`](docs/demo/walkthrough.mp4) — the live deployed site (connect wallet → live on-chain results → reward balance) → the GitHub repo (README, deployed contract IDs, tx history table) → the passing CI run with the full step list and Vitest summary. Recorded against the deployed testnet contracts and the actual repo, not a mock.
 
 ## Tests
 
