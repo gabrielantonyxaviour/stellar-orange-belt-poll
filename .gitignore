@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+contracts/target
+contracts/.cargo-home
+.env.local
+.npm-cache
+.wrangler
